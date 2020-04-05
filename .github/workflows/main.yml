@@ -1,4 +1,5 @@
 name: Backend Chat CI/CD
+
 on:
   push:
     branches:
@@ -15,7 +16,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Install
+      - name: Install & Tests
         run: |
           npm install
           npm test
